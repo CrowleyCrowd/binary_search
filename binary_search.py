@@ -1,9 +1,9 @@
 def define_array():
   array = []
   arrayLenght = int(input("Ingrese la dimensión del Array: "))
-  while arrayLenght == 0:
-        print("El arreglo no puede estar vacío")
-        arrayLenght = int(input("Ingrese la dimensión del Array: "))
+  while arrayLenght <= 0:
+        print("La dimensión no puede ser menor o igual a 0")
+        arrayLenght = int(input("Intente nuevamente: "))
   for x in range(arrayLenght):
         arrayItems = int(input("Ingrese un valor: "))
         array.append(arrayItems)
